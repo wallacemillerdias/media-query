@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-image: linear-gradient(to right, rgb(130, 56, 190), rgb(81, 7, 131));
+    margin: 5px;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 rgb(77, 75, 75);
+    min-height: 100px;
+}
+
+.lorem {
+    font-family: monospace;
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 920px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        flex-direction: column;
+        background-color: aquamarine;
+    }
+
+    .content {
+        margin: 5px 0 5px 0;
+        width: 100%;
+    }
+}
